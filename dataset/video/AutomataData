@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo This script will make my life easier
+
+x=1
+while [ $x -le 50 ]
+do
+  python /home/sal/Ball-Tracking/Tesi/minetrack/minetrack.py -v ball$x.mp4
+  x=$(( $x + 1 ))
+done
